@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="title">Temperature Converter</h1>
+        <p class="description">Enter the temperature to convert.</p>
+        <div class="inputs">
+          <div class="field">
+            <label for="temp">Temperature</label>
+            <input type="number" id="temp" placeholder="Enter temperature" />
+          </div>
+          <div class="field">
+            <label for="temp_diff">From</label>
+            <select id="temp_diff">
+              <option value="celcius">Celcius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+            </select>
+          </div>
+        </div>
+        <div class="error"></div>
+        <div class="result-container">
+          <h4 class="result-title">Result</h4>
+          <p id="result">
+            <span id="result-temp">--</span>
+            <span id="result-temp_diff"></span>
+          </p>
+        </div>
+        <button id="convert-btn" onclick="convertTemp()">Convert</button>
+
+        <div class="equation-container">
+          <a href="#equation" id="equation-btn" onclick="showEquation()"
+            >show equation</a
+          >
+          <p id="equation"></p>
+        </div>
+      </div>
+    </section>
+    <script src="./js/converter.js" defer></script>
+  </body>
+</html>

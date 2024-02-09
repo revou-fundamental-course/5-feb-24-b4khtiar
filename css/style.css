@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  padding: 8px;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  letter-spacing: -0.02rem;
+  font-weight: 600;
+  text-align: center;
+  color: #23a6d5;
+}
+.description {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  gap: 8px;
+}
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  color: darkgray;
+  font-weight: 200;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 0 8px;
+}
+input,
+select {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.02rem;
+}
+.result-container {
+  margin-top: 16px;
+  text-align: center;
+}
+.result-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#result {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #23a6d5;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+}
+.equation-container {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 200;
+}
+.equation-btn {
+  font-size: 0.8rem;
+  display: block;
+  margin: 0 auto;
+  text-decoration: underline;
+  font-style: italic;
+}
+#equation {
+  display: none;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 92%;
+  }
+}
